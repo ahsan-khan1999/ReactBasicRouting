@@ -7,18 +7,18 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
-  
+} from "react-router-dom";
+
 
 export default function Routes() {
     return (
         <div>
             <Router>
                 <Switch>
-                    
-                    <Route path='/about' component={About}/>
-                    <Route path='/contact' component={Contect}/>
-                    <Route path='/' component={Home}/>
+                    <Route exact  path='/' component={Home} />
+                    <Route path='/about' component={About} />
+                    <Route path='/contact' component={Contect} />
+
                 </Switch>
             </Router>
         </div>
